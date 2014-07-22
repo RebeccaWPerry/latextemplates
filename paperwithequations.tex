@@ -1,0 +1,27 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage} %\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+
+\title{replace with your title}
+\author{replace with your name}
+\date{\today} %or you can write out the specific date you want
+
+\begin{document}
+\maketitle
+
+This is an example of including equations and greek letters in a paper. By entering math mode either through beginning an equation section or using \$ signs, LaTeX knows you want that part of your text to be nicely formated as math. This is my favorite equation. It is called the Stokes-Einstein equation:
+\begin{equation}
+D = \frac{k_{\beta}T}{6\pi\eta r}
+\label{eqn:stokes-einstein}
+\end{equation}
+where $k_{\beta}$ is the Boltzmann constant ($1.3806\times10^{-23} \frac{m^2kg}{s^2K}$), $T$ is the temperature, $\eta$ is viscosity, and $r$ is the radius of a sphere. It is pretty common that you might want to refer back to an equation later in your paper. You can do this easily in LaTeX! For example: as given in Equation \eqref{eqn:stokes-einstein}.  Or you might say, using Equation \ref{eqn:stokes-einstein}, we compute the diffusion constant for a set of spheres. Because we are referring to the equation with a label, the number will automatically update if you reorder the equations in your paper!
+
+If you want an equation without a number, you can use the equation* environment:
+\begin{equation*}
+D = \frac{k_{\beta}T}{6\pi\eta r}
+\label{eqn:stokes-einstein_no_number}
+\end{equation*}
+
+This example with equations is full of special characters that have special meanings in LaTeX: \$, \textbackslash, \%. If you want to use these in your text as plain text, you need to be careful. Putting a \textbackslash in front of \% says to LaTeX, ``this is just a plain percent sign."
+
+\end{document}
