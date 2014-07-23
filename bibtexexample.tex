@@ -1,0 +1,33 @@
+\documentclass[11pt]{article}%{amsart} %{article}
+\usepackage{geometry}
+\geometry{letterpaper, tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+
+\begin{document}
+\title{A Bibliography Example}
+\author{Jerome Fung}
+\date{July 16, 2013}
+\maketitle
+
+\section{Mie Scattering}
+The scattering of light by a homogenous sphere is highly relevant to
+colloid science, meteorology, and astronomy, to name but a few
+fields. The exact solution of Maxwell's equations for this scattering
+problem is known as the Mie solution. In the modern formulation given
+by Bohren \& Huffman \cite{Bohren83}, finding the scattered
+electromagnetic fields consists of solving for the vector
+eigenfunctions of a sphere (known as vector spherical harmonics),
+expanding an incident plane wave in terms of vector spherical
+harmonics, and then applying appropriate boundary conditions at the
+surface of the sphere. The necessary electromagnetic theory is
+discussed in Jackson \cite{Jackson99}. Algorithms still in use today
+for the non-trivial task of numerically computing results from the
+analytic solution are clearly discussed by Wiscombe \cite{Wiscombe80}.  
+
+
+\bibliographystyle{plain}
+\bibliography{examplebibfile}
+
+\end{document}
+
+
+
