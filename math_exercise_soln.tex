@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}  
+\usepackage[letterpaper]{geometry}
+\usepackage{amsmath} % Load AMS Math package
+\usepackage{amsfonts} % additional math fonts
+\usepackage{mathrsfs} % math script characters
+
+\usepackage{parskip} % Suppresses paragraph indentation
+% otherwise, use \noindent command
+
+\begin{document}
+
+
+\Large \textbf{Diagnostic Quiz \\ Prof.~Etaoin Shrdlu}
+\normalsize
+
+\vspace{0.3in} % insert vertical whitespace
+Name: \line(1,0){200} % x-slope, y-slope, length in points
+
+
+You have 1 hour to complete this quiz. No books or notes are
+allowed. You may use a scientific calculator. Remember to sign the
+honor pledge at the end.
+
+\begin{enumerate} % create a numbered list of problems
+\item The fraction $\frac{11}{4}$ is equal to
+  \begin{enumerate} % list environments can be nested
+    \item 17
+    \item 4.372958
+    \item 2.75
+    \item 0.11
+  \end{enumerate}
+
+
+\item Solve the following expression for $x$:
+\begin{equation*}
+ 3x + 5 = 17
+\end{equation*}
+\vspace{0.75in}
+
+\item Sketch the following line:
+\begin{equation*}
+3x + 2y = -2\pi
+\end{equation*}
+\vspace{1.25in}
+
+\pagebreak
+
+\item Prove the following trigonometric identity:
+\begin{equation*}
+\cos 2\theta = \cos^2\theta - \sin^2\theta
+\end{equation*}
+
+\vspace{1in}
+
+\item Compute the inverse of the following matrix:
+\begin{equation*}
+A = \begin{pmatrix} 
+% I recommend the AMS pmatrix or bmatrix environments over array
+1 & 3 & 3 \\
+1 & 4 & 3 \\
+2 & 7 & 7
+\end{pmatrix}
+\end{equation*}
+\vspace{1.25in}
+
+\item Compute this definite integral:
+\begin{equation*}
+\int_0^{10} 2x e^{x^2}\, dx
+\end{equation*}
+\vspace{1.25in}
+
+\item Consider the following function:
+\begin{equation*}
+f(x) = \begin{cases}
+2x & \text{if } x<0 \\
+e^{-x}\cos x & \text{if } x \geq 0.
+\end{cases}
+\end{equation*}
+Does the derivative $f'(x)$ exist at $x=0$? Why or why not?
+\vspace{0.75in}
+
+\item Sum the following series:
+\begin{equation*}
+  \sum_{n=0}^\infty \frac{1}{2^n}
+\end{equation*}
+\vspace{0.75in}
+\end{enumerate}
+
+
+
+\textbf{Honor Pledge: Upon my honor, I hereby affirm that I have
+  abided by all the rules of this course and of the University of
+  Southern North Dakota at Hoople in the completion of this quiz, and
+  that I have neither received nor given any unauthorized assistance.}
+\vspace{0.2in}
+
+Signature: \line(1,0){200}
+
+
+\end{document}
